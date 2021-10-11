@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                background: #000;
+            }
+            .mybulb{
+                width: 400px;
+                height: 400px;
+                margin: auto;
+                text-align: center;
+            }
+
+        </style>
+        <script>
+            //funcation defination
+            function clickMe(state){
+                //alert("ojbfjf");
+            
+            if(state == 'on'){
+                //ture
+                document.body.style.backgroundColor="yellow";
+                document.getElementById('myimg').setAttribute('src','./img/bulb2.png');
+               
+            }else{
+                //false
+                document.body.style.backgroundColor="black";
+                document.getElementById('myimg').setAttribute('src','./img/bulb1.png');
+
+                
+            }}
+
+        </script>
+    </head>
+    <body>
+        <div class="mybulb">
+            <img id="myimg" width="230"src="./img/bulb1.png" alt="">
+            <br>
+            <button onclick="clickMe('on')">Bulb On</button>
+            <button onclick="clickMe('off')">Bulb Off</button>
+        </div>
+        <script></script>
+    </body>
+</html>
